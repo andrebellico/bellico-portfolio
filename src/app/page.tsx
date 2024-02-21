@@ -1,169 +1,131 @@
 'use client'
 
-import { motion, useScroll } from 'framer-motion'
-import Image from 'next/image'
-import Card from '../components/Cards'
-import { FaBookReader } from 'react-icons/fa'
-import { HiAcademicCap } from 'react-icons/hi'
-import { Avatar } from '@nextui-org/react'
 import { Transition } from '@headlessui/react'
-import { BiDownload } from 'react-icons/bi'
+import Image from 'next/image'
+import { IoIosArrowForward } from 'react-icons/io'
+import { motion } from 'framer-motion'
 
 export default function Home() {
-  const { scrollYProgress } = useScroll()
   return (
     <>
-      <motion.div style={{ scaleX: scrollYProgress }} />
-      <div className="flex">
-        <Transition
-          appear={true}
-          show={true}
-          enter="transition-opacity duration-300"
-          enterFrom="opacity-0 left-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-300"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <main className="my-10 mx-44">
+      <Transition
+        appear={true}
+        show={true}
+        enter="transition-opacity duration-300"
+        enterFrom="opacity-0 left-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-300"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <div className="flex items-center justify-center h-screen">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-5xl">I’m a web Developer and designer</h1>
+          </div>
+        </div>
+        <div className="mx-28 h-96">
+          <div className="font-light">
             <div className="flex">
-              <Image
-                className="rounded-lg"
-                src="/perfil.png"
-                alt="Perfil do Bellico"
-                height={100}
-                width={100}
-              />
-              <div className="ml-4">
-                <h1 className="text-3xl font-semibold">André Bellico</h1>
-                <p className="font-semibold text-neutral-600">
-                  Front-end, Web Developer @ASYNC
-                </p>
-                <Transition.Child
-                  enter="transition ease-in-out duration-90 transform"
-                  enterFrom="-translate-x-full opacity-0"
-                  enterTo="translate-x-0 opacity-100"
-                  leave="transition  ease-in-out duration-90 transform"
-                  leaveFrom="translate-x-0 opacity-100"
-                  leaveTo="-translate-x-full opacity-0"
-                >
-                  <div className="mt-2 gap-2 flex">
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      ReactJS
-                    </h1>
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      TypeScript
-                    </h1>
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      Git/GitHub
-                    </h1>
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      NodeJs
-                    </h1>
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      Figma
-                    </h1>
-                    <h1 className="font-medium bg-pink-900 text-xs px-2 w-fit p-1 rounded-lg">
-                      TailwindCSS
-                    </h1>
-                  </div>
-                </Transition.Child>
-              </div>
+              <h1 className="text-neutral-700 text-3xl">
+                Some of the clients I have{' '}
+              </h1>
             </div>
-            <Card icon={<FaBookReader />} title="About Me">
-              Atualmente, estou focado no aprimoramento das minhas habilidades
-              na criação de sistemas, interfaces atraentes e intuitivas,
-              utilizando ferramentas como React, Typescript e TailwindCSS.
-              Recentemente, participei de projetos nos quais fortaleci minhas
-              competências em HTML, CSS, Node.js, Figma e MongoDB. A combinação
-              destas tecnologias tem permitido que eu contribua de forma eficaz
-              para o desenvolvimento de interfaces elegantes e funcionais. Estou
-              comprometido em continuar aprendendo e explorando novas técnicas
-              para aprimorar ainda mais minhas capacidades.
-            </Card>
-            <Transition.Child
-              enter="transition ease-in-out duration-90 transform"
-              enterFrom="-translate-x-full opacity-0"
-              enterTo="translate-x-0 opacity-100"
-              leave="transition  ease-in-out duration-90 transform"
-              leaveFrom="translate-x-0 opacity-100"
-              leaveTo="-translate-x-full opacity-0"
+            <p className="text-3xl">developer for</p>
+          </div>
+          <div className="flex font-semibold mt-24 text-neutral-800 text-3xl justify-around">
+            <div>
+              <h1>ANALIZE</h1>
+            </div>
+            <div>
+              <h1>ASYNC</h1>
+            </div>
+            <div>
+              <h1>PlanaAdhoc</h1>
+            </div>
+          </div>
+        </div>
+        <div className="mx-28 ">
+          <h1 className="text-3xl mb-24">Selected Works</h1>
+          <div className="flex gap-8">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             >
-              <div className="flex fle gap-4">
-                <Card
-                  link="stackand"
-                  icon={<HiAcademicCap />}
-                  linkTitle="More"
-                  title="Experience"
-                >
-                  <div className="flex gap-4 items-center my-4">
-                    <Avatar isBordered src="/async.svg" />
-                    <div>
-                      <h1>ASYNC</h1>
-                      <p className="text-neutral-600">Desenvolvedor</p>
-                      <p className="text-neutral-700">2023/Nov - Present</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4 items-center my-4">
-                    <Avatar isBordered src="/uniitalo.png" />
-                    <div>
-                      <h1>Universidade Uniítalo</h1>
-                      <p className="text-neutral-600">
-                        Análise e Desenvolvimento de Sistemas
-                      </p>
-                      <p className="text-neutral-700">2024 - 2026</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4 items-center my-4">
-                    <Avatar isBordered src="/rocketseat.png" />
-                    <div>
-                      <h1>Rocketseat</h1>
-                      <p className="text-neutral-600">ReactJS</p>
-                      <p className="text-neutral-700">2023 - 50hrs</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4 items-center my-4">
-                    <Avatar isBordered src="/udemy.png" />
-                    <div>
-                      <h1>Udemy</h1>
-                      <p className="text-neutral-600">Lógica de Programação</p>
-                      <p className="text-neutral-700">2023 - 20hrs</p>
-                    </div>
-                  </div>
-                  <iframe name="iframe_download" className="hidden"></iframe>
-                  <a
-                    download="Curriculum.pdf"
-                    className="bg-pink-900 w-full gap-2 items-center flex justify-center font-semibold px-4 py-2 rounded-lg"
-                    href="/Curriculum.pdf"
-                    target="iframe_download"
-                  >
-                    Download CV
-                    <BiDownload size={18} />
-                  </a>
-                </Card>
-                <Card icon={<FaBookReader />} title="More about me">
-                  <ul className="list-disc p-4">
-                    <li>Age: 18</li>
-                    <li>Role: Web Developer</li>
-                    <li>
-                      Languages: English (intermediary) | Portuguese (native)
-                    </li>
-                    <li>Location: São Paulo, Brazil</li>
-                    <li>Pronous: he/him</li>
-                    <li>
-                      Interest: Listem music, play games, play instruments, go
-                      out with friends
-                    </li>
-                  </ul>
-                </Card>
-              </div>
-            </Transition.Child>
-            <Card icon={<FaBookReader />} title="Projects">
-              <div></div>
-            </Card>
-          </main>
-        </Transition>
-      </div>
+              <Image src="/asyncP.svg" width={594} height={490} alt="logo" />
+            </motion.div>
+            <div className="p-2 gap-4">
+              <h1 className="mb-4">Landing Page</h1>
+              <h1 className="text-2xl ">
+                Desenvolvi o visual da landing page da empresa com o foco em
+                atrair clientes e aumentar o faturamento, aprendendo e
+                aprimorando técnicas de marketing.
+              </h1>
+              <h1 className="my-6">Website Design</h1>
+              <button className="border rounded-full p-2 flex font-thin text-sm items-center justify-center">
+                view work
+                <IoIosArrowForward />
+              </button>
+            </div>
+          </div>
+          <div className="flex gap-8 my-24">
+            <div className="p-2 gap-4">
+              <h1 className="mb-4">Architecture System</h1>
+              <h1 className="text-3xl ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                adipisci commodi, sit uns
+              </h1>
+              <h1 className="my-6">Website Design</h1>
+              <button className="border rounded-full p-2 flex font-thin text-sm items-center justify-center">
+                view work
+                <IoIosArrowForward />
+              </button>
+            </div>
+            <Image src="/PlanaAdhoc.svg" width={594} height={490} alt="logo" />
+          </div>
+          <div className="flex gap-8">
+            <Image src="/Group 6.svg" width={594} height={490} alt="logo" />
+            <div className="p-2 gap-4">
+              <h1 className="mb-4">Landing Page</h1>
+              <h1 className="text-3xl ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                adipisci commodi, sit uns
+              </h1>
+              <h1 className="my-6">Website Design</h1>
+              <button className="border rounded-full p-2 flex font-thin text-sm items-center justify-center">
+                view work
+                <IoIosArrowForward />
+              </button>
+            </div>
+          </div>
+          <div className="flex gap-8 my-24">
+            <div className="p-2 gap-4">
+              <h1 className="mb-4">Landing Page</h1>
+              <h1 className="text-3xl ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+                adipisci commodi, sit uns
+              </h1>
+              <h1 className="my-6">Website Design</h1>
+              <button className="border rounded-full p-2 flex font-thin text-sm items-center justify-center">
+                view work
+                <IoIosArrowForward />
+              </button>
+            </div>
+            <Image
+              src="/DesignSystem.svg"
+              width={594}
+              height={490}
+              alt="logo"
+            />
+          </div>
+          <div className="mx-28 gap-4 items-center justify-center flex h-[996px]">
+            <h1 className="text-3xl ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              adipisci commodi, sit uns
+            </h1>
+            <Image src="/Horizontal.svg" width={480} height={490} alt="logo" />
+          </div>
+        </div>
+      </Transition>
     </>
   )
 }

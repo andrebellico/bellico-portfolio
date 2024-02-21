@@ -3,18 +3,18 @@
 ## StackAndUses
  [] Front-end || ReactJs, CSS, HTML, NextJs, TailwindCSS, JavaScript, TypeScript, Radix, Vite, Framer Motion.
 
- [] Design || Figma, Canvas
+ [] Design || Figma, Canvas.
 
- [] Documentation || Storybook
+ [] Documentation || Storybook.
 
- [] Back-end || TypeScript, Node
+ [] Back-end || TypeScript, Node.
 
- [] Database || MongoDB, MySQL, Supabase
+ [] Database || MongoDB, MySQL, Supabase.
 
- [] Infrastruture || Vercel, Supabase
+ [] Infrastruture || Vercel, Supabase.
 
- [] Version Control || Git, GitHub
+ [] Version Control || Git, GitHub.
 
- [] Extesions, plugins and themes || ESLint, Prettier, ReactIcons, NextUI, LucideIcons, MUI, 
+ [] Extesions, plugins and themes || ESLint, Prettier, ReactIcons, NextUI, LucideIcons, MUI.
 
- [] Apps || Spotify, Discord, VisualStudioCode, Intellij, Notion, ClickUp, Trello, Gi
+ [] Apps || VisualStudioCode, Intellij, ClickUp, Trello.
