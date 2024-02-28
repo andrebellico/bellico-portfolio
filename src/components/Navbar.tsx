@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 import SpotifyWebApi from 'spotify-web-api-js'
 
@@ -64,10 +65,10 @@ export default function Navbar({ children }: NavbarProps) {
     })
   }
   return (
-    <header className="flex">
-      <div className="text-pink-700 fixed top-0 left-0 right-0 bg-black flex items-center p-3 justify-between mx-28">
+    <header className="flex z-[999]">
+      <div className="text-pink-500  z-[999] fixed top-0 left-0 right-0 bg-transparent flex items-center p-3 justify-between mx-28">
         <h1 className="font-semibold text-xl">Bellico</h1>
-        <div className="gap-2 text-xs flex">
+        <div className="gap-2 text-sm flex">
           {loggedIn && (
             <>
               <div>
@@ -79,8 +80,12 @@ export default function Navbar({ children }: NavbarProps) {
               </div>
             </>
           )}
-          <button className="ml-8">HOME</button>
-          <button className="text-white">WORK</button>
+          <a className="ml-8">
+            <FaLinkedin size={20} />
+          </a>
+          <a className="">
+            <FaInstagram size={20} />
+          </a>
           {loggedIn ? (
             <button className="text-white" onClick={() => getNowPlaying()}>
               Check Now Playing

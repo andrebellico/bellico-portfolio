@@ -1,20 +1,17 @@
-# Pages
-
 ## StackAndUses
- [] Front-end || ReactJs, CSS, HTML, NextJs, TailwindCSS, JavaScript, TypeScript, Radix, Vite, Framer Motion.
 
- [] Design || Figma, Canvas.
+ [x] Front-end || ReactJs, CSS, HTML, NextJs, TailwindCSS, JavaScript, TypeScript, Radix, Vite, Framer Motion.
 
- [] Documentation || Storybook.
+ [x] Design || Figma, Canvas.
 
- [] Back-end || TypeScript, Node.
+ [x] Documentation || Storybook.
 
- [] Database || MongoDB, MySQL, Supabase.
+ [x] Back-end || Node.
 
- [] Infrastruture || Vercel, Supabase.
+ [x] Database || MongoDB, MySQL.
 
- [] Version Control || Git, GitHub.
+ [x] Infrastruture ||  Supabase.
 
- [] Extesions, plugins and themes || ESLint, Prettier, ReactIcons, NextUI, LucideIcons, MUI.
+ [x] Version Control || Git, GitHub.
 
- [] Apps || VisualStudioCode, Intellij, ClickUp, Trello.
+# Steps
