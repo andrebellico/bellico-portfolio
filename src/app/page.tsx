@@ -3,7 +3,6 @@
 import HomeHeader from '@/components/Home'
 import StackAndUses from '@/components/StackAndUses'
 import ClientsWork from '@/components/Clients'
-import AboutMe from '@/components/AboutMe'
 import SelectedWorks from '@/components/SelectedWorks'
 
 export default function Home() {
@@ -12,10 +11,7 @@ export default function Home() {
       <HomeHeader />
       <StackAndUses />
       <ClientsWork />
-      <div className="mx-28 ">
-        <SelectedWorks />
-        <AboutMe />
-      </div>
+      <SelectedWorks />
     </>
   )
 }

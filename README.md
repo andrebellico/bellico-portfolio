@@ -15,3 +15,21 @@
  [x] Version Control || Git, GitHub.
 
 # Steps
+
+[] Switch Languages
+
+[] AboutMe
+
+[] Rework in SelectedWorks
+
+[] 404 page
+
+[] API Spotify
+
+[] API ContactMe
+
+
+
+## English website text
+
+

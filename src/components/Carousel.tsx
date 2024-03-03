@@ -40,7 +40,7 @@ export default function Carousel({ children: slides }: CarouselProps) {
             {slides.map((_, index) => (
               <div
                 key={index}
-                className={`transition-all w-3 h-3 bg-white rounded-full ${curr === index ? 'p-2' : 'bg-opacity-50'}`}
+                className={`transition-all w-3 h-3 bg-white rounded-full border border-black ${curr === index ? 'p-2' : 'bg-opacity-50'}`}
               ></div>
             ))}
           </div>

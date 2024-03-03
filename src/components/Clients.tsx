@@ -42,7 +42,7 @@ export default function ClientsWork() {
             transition={{ delay: 0 }}
             className="text-neutral-500 text-3xl"
           >
-            Some of the clients I have{' '}
+            Alguns dos clientes para os quais tenho{' '}
           </motion.h1>
         </div>
         <motion.p
@@ -56,7 +56,7 @@ export default function ClientsWork() {
           transition={{ delay: 0 }}
           className="text-3xl text-white"
         >
-          developer for
+          desenvolvido
         </motion.p>
       </div>
       <div className="flex  font-semibold mt-24 text-white  text-3xl justify-around">
@@ -64,7 +64,10 @@ export default function ClientsWork() {
           <motion.h1
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1, color: '#be185d' }}
-            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
             ANALIZE
           </motion.h1>
@@ -73,7 +76,10 @@ export default function ClientsWork() {
           <motion.h1
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1, color: '#be185d' }}
-            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
             ASYNC
           </motion.h1>
@@ -82,7 +88,10 @@ export default function ClientsWork() {
           <motion.h1
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.1, color: '#be185d' }}
-            transition={{ bounceDamping: 10, bounceStiffness: 600 }}
+            transition={{ duration: 0.7 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
           >
             Plana Adhoc
           </motion.h1>

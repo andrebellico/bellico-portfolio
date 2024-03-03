@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 
 import SpotifyWebApi from 'spotify-web-api-js'
@@ -65,8 +66,13 @@ export default function Navbar({ children }: NavbarProps) {
     })
   }
   return (
-    <header className="flex z-[999]">
-      <div className="text-pink-500  z-[999] fixed top-0 left-0 right-0 bg-transparent flex items-center p-3 justify-between mx-28">
+    <header className="absolute top-0 z-10 h-24 w-full flex items-center justify-center">
+      <motion.div
+        initial={{ top: -100 }}
+        animate={{ top: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-pink-500  z-[999] fixed top-0 left-0 right-0 bg-transparent flex items-center p-3 justify-between mx-28"
+      >
         <h1 className="font-semibold text-xl">Bellico</h1>
         <div className="gap-2 text-sm flex">
           {loggedIn && (
@@ -80,10 +86,13 @@ export default function Navbar({ children }: NavbarProps) {
               </div>
             </>
           )}
-          <a className="ml-8">
+          <a
+            href="https://www.linkedin.com/in/andr%C3%A9-bellico/"
+            className="ml-8"
+          >
             <FaLinkedin size={20} />
           </a>
-          <a className="">
+          <a href="https://www.instagram.com/andrevsbellico/" className="">
             <FaInstagram size={20} />
           </a>
           {loggedIn ? (
@@ -96,7 +105,7 @@ export default function Navbar({ children }: NavbarProps) {
             </a>
           )}
         </div>
-      </div>
+      </motion.div>
       {children}
     </header>
   )
