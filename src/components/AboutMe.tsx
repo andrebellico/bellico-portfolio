@@ -21,11 +21,12 @@ export default function AboutMe() {
         <p className="text-pink-600 text-lg">Olá, meu nome é</p>
         <h1 className="mb-4 text-5xl mt-2">André Bellico</h1>
         <p className="mr-10 pr-10 ">
-          Olá, meu nome é André Bellico e sou um desenvolvedor front-end
-          apaixonado por tecnologia. Com 4 meses de experiência. Meu objetivo é
-          criar interfaces de usuário bonitas e funcionais, além de liderar
-          equipes técnicas em projetos desafiadores. Estou sempre aberto a novas
-          oportunidades e desafios.
+          Olá! Sou André Bellico, um desenvolvedor web apaixonado por
+          tecnologia, com quatro meses de experiência na área. Tenho um forte
+          desejo de dedicar-me à criação de sistemas inovadores, combinando
+          interfaces atraentes e intuitivas em projetos desafiadores. Estou
+          constantemente buscando novas oportunidades e desafios para expandir
+          meu conhecimento e habilidades.
         </p>
         <div className="gap-3 flex mt-1">
           <div className="rounded bg-pink-800/30 px-2  text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
