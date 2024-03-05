@@ -16,7 +16,7 @@
 
 # Steps
 
-[] Switch Languages // after mvp
+[] Switch Languages BR/USA // after mvp
 
 [x] AboutMe
 
@@ -28,9 +28,7 @@
 
 [x] API ContactMe 
 
-
-
-
+[] Responsive website // after mvp
 
 ## English website text
 
