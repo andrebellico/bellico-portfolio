@@ -10,7 +10,7 @@ export default function HomeHeader() {
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -100 }}
       transition={{ duration: 0.5 }}
-      className="flex  items-center justify-center h-screen"
+      className="flex -mb-14 items-center justify-center h-screen"
     >
       <div className="flex flex-col items-center justify-center">
         <div className="text-5xl flex">

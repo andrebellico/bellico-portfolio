@@ -113,10 +113,12 @@ export default function SelectedWorks() {
               técnicas de marketing.
             </h1>
 
-            <a className="p-2 flex font-thin text-sm items-center ">
-              Ver design
-              <IoIosArrowForward />
-            </a>
+            <div className="flex mt-2 gap-2">
+              <button className=" flex font-thin text-sm items-center justify-center">
+                Ver design
+                <IoIosArrowForward />
+              </button>
+            </div>
           </div>
         </motion.div>
         <motion.div

@@ -16,17 +16,17 @@
 
 # Steps
 
-[] Switch Languages
+[] Switch Languages // after mvp
 
-[] AboutMe
+[x] AboutMe
 
-[] Rework in SelectedWorks
+[x] Rework in SelectedWorks
 
-[] 404 page
+[x] 404 page
 
-[] API Spotify
+[] API Spotify // after mvp
 
-[] API ContactMe
+[] API ContactMe 
 
 
 
