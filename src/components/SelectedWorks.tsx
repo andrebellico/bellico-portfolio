@@ -96,7 +96,7 @@ export default function SelectedWorks() {
                     <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl shadow-xl transition-all">
                       <Carousel>
                         {slidesAsync.map((s) => (
-                          <img src={s} key={s} />
+                          <Image src={s} key={s} alt="Async Design" />
                         ))}
                       </Carousel>
                     </Dialog.Panel>
@@ -184,7 +184,7 @@ export default function SelectedWorks() {
                     <Dialog.Panel className="w-full max-w-3xl transform overflow-hidden rounded-2xl shadow-xl transition-all">
                       <Carousel>
                         {slidesPlana.map((s) => (
-                          <img src={s} key={s} />
+                          <Image src={s} key={s} alt="PlanaAdhoc" />
                         ))}
                       </Carousel>
                     </Dialog.Panel>
