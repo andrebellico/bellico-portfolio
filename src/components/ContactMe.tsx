@@ -2,6 +2,7 @@ import * as z from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import emailjs from '@emailjs/browser'
+import { useToast } from '@/components/ui/use-toast'
 
 const contactSchema = z.object({
   from_name: z
@@ -14,7 +15,8 @@ const contactSchema = z.object({
 type ContactSchema = z.infer<typeof contactSchema>
 
 export default function ContactMe() {
-  const { handleSubmit, register } = useForm<ContactSchema>({
+  const { toast } = useToast()
+  const { handleSubmit, register, reset } = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
   })
 
@@ -28,16 +30,28 @@ export default function ContactMe() {
       )
       .then(
         () => {
-          console.log('SUCCESS!')
+          toast({
+            title: 'Mensagem enviada',
+            description: 'Sua mensagem foi enviado com sucesso!!',
+          })
         },
         (error) => {
-          console.log('FAILED...', error.text)
+          toast({
+            title: 'Mensagem não enviada',
+            description: error.text,
+            variant: 'destructive',
+          })
         },
       )
+
+    reset()
   }
 
   return (
-    <div className="h-screen w-full flex justify-center items-center">
+    <div
+      id="ContactMe"
+      className="h-screen w-full flex justify-center items-center"
+    >
       <div className="flex flex-col gap-3">
         <h1 className="text-5xl text-pink-500 mb-6">Entre em contato</h1>
         <form onSubmit={handleSubmit(sendEmail)}>
@@ -67,7 +81,10 @@ export default function ContactMe() {
               className="border rounded p-2 text-xs  w-full"
             />
           </div>
-          <button className="bg-white text-black p-2 rounded" type="submit">
+          <button
+            className="bg-white mt-2 text-black p-2 rounded"
+            type="submit"
+          >
             Enviar
           </button>
         </form>

@@ -114,7 +114,10 @@ export default function SelectedWorks() {
             </h1>
 
             <div className="flex mt-2 gap-2">
-              <button className=" flex font-thin text-sm items-center justify-center">
+              <button
+                onClick={openModalAsync}
+                className=" flex font-thin text-sm items-center justify-center"
+              >
                 Ver design
                 <IoIosArrowForward />
               </button>

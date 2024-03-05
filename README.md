@@ -26,7 +26,9 @@
 
 [] API Spotify // after mvp
 
-[] API ContactMe 
+[x] API ContactMe 
+
+
 
 
 

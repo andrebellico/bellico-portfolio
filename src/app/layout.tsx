@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Josefin_Sans } from 'next/font/google'
+import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 import { RenderContent } from '@/components/RenderContent'
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       </head>
       <body>
         <RenderContent>{children}</RenderContent>
+        <Toaster />
       </body>
     </html>
   )
