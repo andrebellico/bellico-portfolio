@@ -220,6 +220,8 @@ export default function SelectedWorks() {
 
             <div className="flex gap-2">
               <Link
+                target="_blank"
+                rel="noreferrer"
                 href={'https://devcodapp.github.io/async-ui/'}
                 className=" flex font-thin text-sm items-center justify-center"
               >
@@ -227,6 +229,8 @@ export default function SelectedWorks() {
                 <IoIosArrowForward />
               </Link>
               <Link
+                target="_blank"
+                rel="noreferrer"
                 href={'https://github.com/devcodapp/async-ui'}
                 className=" flex font-thin text-sm items-center justify-center"
               >

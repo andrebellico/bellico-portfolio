@@ -28,6 +28,8 @@
 
 [x] API ContactMe 
 
+[x] Favicon
+
 [] Responsive website // after mvp
 
 ## English website text

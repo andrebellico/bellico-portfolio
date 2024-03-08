@@ -6,7 +6,7 @@ import './globals.css'
 import { RenderContent } from '@/components/RenderContent'
 
 export const metadata: Metadata = {
-  title: 'Portfólio',
+  title: '| Portfólio',
   description: 'Bellico',
 }
 const josefin = Josefin_Sans({

@@ -1,5 +1,6 @@
 // import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
 
 // import SpotifyWebApi from 'spotify-web-api-js'
@@ -86,18 +87,36 @@ export default function Navbar({ children }: NavbarProps) {
               </div>
             </>
           )} */}
-          <a href="https://github.com/andrebellico" className="ml-8">
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/andrebellico"
+            className="ml-8"
+          >
             <FaGithub size={20} />
-          </a>
-          <a href={`https://wa.me/5511975981987?text=Olá, tudo bem?`}>
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href={`https://wa.me/5511975981987?text=Olá, tudo bem?`}
+          >
             <FaWhatsapp size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/andr%C3%A9-bellico/">
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/andr%C3%A9-bellico/"
+          >
             <FaLinkedin size={20} />
-          </a>
-          <a href="https://www.instagram.com/andrevsbellico/" className="">
+          </Link>
+          <Link
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/andrevsbellico/"
+            className=""
+          >
             <FaInstagram size={20} />
-          </a>
+          </Link>
           {/* {loggedIn ? (
             <button className="text-white" onClick={() => getNowPlaying()}>
               Check Now Playing
