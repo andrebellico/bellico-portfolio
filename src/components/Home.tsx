@@ -13,7 +13,7 @@ export default function HomeHeader() {
       className="flex -mb-14 items-center justify-center h-screen"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className="text-5xl flex">
+        <div className="sm:text-5xl text-2xl flex">
           {sentence.map((letter, index) => {
             return (
               <HeaderText key={index}>

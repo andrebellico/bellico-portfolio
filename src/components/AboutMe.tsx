@@ -12,16 +12,20 @@ export default function AboutMe() {
     }
   }
   return (
-    <div className="flex mx-24 text-white items-center justify-center h-screen">
+    <div className="flex mx-24  text-white items-center justify-center h-screen">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
       >
-        <p className="text-pink-600 text-lg">Olá, meu nome é</p>
-        <h1 className="mb-4 text-5xl mt-2">André Bellico</h1>
-        <p className="mr-10 pr-10 ">
+        <p className="text-pink-600 md:text-base sm:text-sm lg:text-lg">
+          Olá, meu nome é
+        </p>
+        <h1 className="mb-4 md:text-4xl sm:3xl lg:text-5xl mt-2">
+          André Bellico
+        </h1>
+        <p className="sm:mr-10 mr-0 pr-0 sm:pr-10 lg:text-base md:text-sm sm:text-xs">
           Olá! Sou André Bellico, um desenvolvedor web apaixonado por
           tecnologia, com quatro meses de experiência na área. Tenho um forte
           desejo de dedicar-me à criação de sistemas inovadores, combinando
@@ -29,30 +33,30 @@ export default function AboutMe() {
           constantemente buscando novas oportunidades e desafios para expandir
           meu conhecimento e habilidades.
         </p>
-        <div className="gap-3 flex mt-1">
-          <div className="rounded bg-pink-800/30 px-2  text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+        <div className="gap-3  lg:grid-cols-6 grid-cols-2 grid text-[0.6rem] md:grid-cols-3 md:text-xs sm:text-xs lg:text-sm sm:grid-cols-2 mt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             NextJs
           </div>
-          <div className="rounded bg-pink-800/30 px-2 text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             ReactJs
           </div>
-          <div className="rounded bg-pink-800/30 px-2 text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             TailwindCSS
           </div>
-          <div className="rounded bg-pink-800/30 px-2 text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             TypeScript
           </div>
-          <div className="rounded bg-pink-800/30 px-2 text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             NodeJs
           </div>
-          <div className="rounded bg-pink-800/30 px-2 text-sm flex hover:text-pink-400 justify-center text-pink-500 pt-1">
+          <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
             Radix
           </div>
         </div>
         <div className="flex items-center ">
           <button
             onClick={handleContact}
-            className="items-center flex border mt-4 border-pink-600 text-pink-400 p-3 rounded-md"
+            className="items-center sm:text-base text-xs flex border mt-4 border-pink-600 text-pink-400 p-3 rounded-md"
           >
             Entre em contato <IoIosArrowRoundForward />{' '}
           </button>
@@ -105,7 +109,7 @@ export default function AboutMe() {
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 200, scale: 0.5 }}
         transition={{ duration: 0.5 }}
-        className="origin-center flex  text-white items-center justify-center h-screen w-full"
+        className=" sm:hidden hidden md:hidden lg:flex  text-white items-center justify-center h-screen w-full"
       >
         <Image
           className="rounded-md ml-14 shadow-lg"

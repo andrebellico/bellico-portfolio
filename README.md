@@ -30,7 +30,7 @@
 
 [x] Favicon
 
-[] Responsive website // after mvp
+[x] Responsive website // after mvp
 
 ## English website text
 

@@ -13,7 +13,7 @@ export function RenderContent({ children }: iRenderContent) {
     <>
       {/* <Sidebar></Sidebar> */}
       <Navbar></Navbar>
-      <div className="p-6 h-full w-full overflow-y-auto">{children}</div>
+      <div className="h-full w-full overflow-y-auto">{children}</div>
     </>
   )
 }

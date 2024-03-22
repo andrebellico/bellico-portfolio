@@ -28,9 +28,9 @@ export default function ClientsWork() {
     }
   }, [isInView2, mainControls])
   return (
-    <motion.div ref={containerRef2} className="text-white mx-28 h-96">
-      <div className="font-light">
-        <div className="flex">
+    <motion.div ref={containerRef2} className="text-white mb-28 mx-28 h-96">
+      <div className="font-light sm:text-3xl text-2xl">
+        <div className="flex ">
           <motion.h1
             style={{ translateX: paragraphOneValues }}
             animate={mainControls}
@@ -40,7 +40,7 @@ export default function ClientsWork() {
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ delay: 0 }}
-            className="text-neutral-500 text-3xl"
+            className="text-neutral-500 "
           >
             Alguns dos clientes para os quais tenho{' '}
           </motion.h1>
@@ -54,12 +54,12 @@ export default function ClientsWork() {
             visible: { opacity: 1, y: 0 },
           }}
           transition={{ delay: 0 }}
-          className="text-3xl text-white"
+          className=" text-white"
         >
           desenvolvido
         </motion.p>
       </div>
-      <div className="flex  font-semibold mt-24 text-white  text-3xl justify-around">
+      <div className="sm:flex md:flex-none gap-4 flex-none font-semibold mt-24 text-white text-2xl sm:text-3xl justify-around">
         <div>
           <motion.h1
             whileTap={{ scale: 0.9 }}
@@ -68,6 +68,7 @@ export default function ClientsWork() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            className="mb-4"
           >
             ANALIZE
           </motion.h1>
@@ -80,6 +81,7 @@ export default function ClientsWork() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            className="mb-4"
           >
             ASYNC
           </motion.h1>
@@ -92,6 +94,7 @@ export default function ClientsWork() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            className="mb-4"
           >
             Plana Adhoc
           </motion.h1>
