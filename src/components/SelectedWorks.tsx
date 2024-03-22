@@ -55,7 +55,7 @@ export default function SelectedWorks() {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="flex mt-24 gap-8"
+          className="sm:flex md:flex flex-none mt-24 gap-8"
         >
           <Image
             src="SelectedWorks/asyncP.svg"
@@ -107,7 +107,7 @@ export default function SelectedWorks() {
           </Transition>
           <div className="p-2 text-white gap-4">
             <h1 className="mb-4 text-pink-500">Landing Page</h1>
-            <h1 className="text-2xl ">
+            <h1 className="sm:text-2xl text-base">
               Desenvolvi o visual da landing page da empresa com o foco em
               atrair clientes e aumentar o faturamento, aprendendo e aprimorando
               técnicas de marketing.
@@ -129,20 +129,25 @@ export default function SelectedWorks() {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5 }}
-          className="flex text-white gap-8 my-24"
+          className="sm:flex flex-none text-white gap-8 my-24"
         >
           <div className="p-2 gap-4">
             <h1 className="mb-4 text-pink-500">Sistema de arquitetura</h1>
-            <h1 className="text-3xl ">
+            <h1 className="sm:text-3xl  text-base">
               O Plana AdHoc é um sistema que automatiza o processo de escolha de
               customizações de arquitetura, de forma intuitiva e interativa!
             </h1>
             <h1 className="my-6">Website</h1>
             <div className="flex gap-2">
-              <button className=" flex font-thin text-sm items-center justify-center">
-                Ver projeto
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                href={'https://plana-adhoc.vercel.app/'}
+                className=" flex font-thin text-sm items-center justify-center"
+              >
+                Ver site
                 <IoIosArrowForward />
-              </button>
+              </Link>
             </div>
           </div>
           <Image
@@ -199,7 +204,7 @@ export default function SelectedWorks() {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="flex mt-24 gap-8"
+          className="sm:flex flex-none mt-24 gap-8"
         >
           <Image
             src="SelectedWorks/DesignSystem.svg"
@@ -210,7 +215,7 @@ export default function SelectedWorks() {
 
           <div className="p-2 text-white gap-4">
             <h1 className="mb-4 text-pink-500">AsyncUI</h1>
-            <h1 className="text-2xl ">
+            <h1 className="sm:text-2xl text-base">
               Design system é um sistema de padronização dos elementos, regras e
               princípios que orientam o desenvolvimento das interfaces de uma
               empresa. Seu objetivo é criar uma identidade para o usuário e

@@ -50,10 +50,12 @@ export default function ContactMe() {
   return (
     <div
       id="ContactMe"
-      className="h-screen w-full flex justify-center items-center"
+      className="h-screen mx-24  flex justify-center items-center"
     >
       <div className="flex flex-col gap-3">
-        <h1 className="text-5xl text-pink-500 mb-6">Entre em contato</h1>
+        <h1 className="sm:text-5xl text-2xl text-pink-500 mb-6">
+          Entre em contato
+        </h1>
         <form onSubmit={handleSubmit(sendEmail)}>
           <div>
             <label className="text-pink-500 text-sm">Nome</label>
