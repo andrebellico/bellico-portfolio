@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { Josefin_Sans } from 'next/font/google'
 import { Toaster } from '@/components/ui/toaster'
 import { RenderContent } from '@/components/RenderContent'
-
+import './globals.css'
 export const metadata: Metadata = {
   title: '| Portfólio',
   description: 'Bellico',
