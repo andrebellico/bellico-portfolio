@@ -6,6 +6,7 @@ import {
   useTransform,
 } from 'framer-motion'
 import { useEffect, useRef } from 'react'
+import { useTranslations } from 'use-intl'
 
 export default function ClientsWork() {
   const containerRef2 = useRef(null)
@@ -15,6 +16,7 @@ export default function ClientsWork() {
     target: containerRef2,
     offset: ['start end', 'end start'],
   })
+  const t = useTranslations()
 
   const paragraphOneValues = useTransform(
     scrollYProgress,
@@ -42,7 +44,7 @@ export default function ClientsWork() {
             transition={{ delay: 0 }}
             className="text-neutral-500 "
           >
-            Alguns dos clientes para os quais tenho{' '}
+            {t('CLIENTS.p1')}{' '}
           </motion.h1>
         </div>
         <motion.p
@@ -56,7 +58,7 @@ export default function ClientsWork() {
           transition={{ delay: 0 }}
           className=" text-white"
         >
-          desenvolvido
+          {t('CLIENTS.p2')}
         </motion.p>
       </div>
       <div className="sm:flex md:flex-none gap-4 flex-none font-semibold mt-24 text-white text-2xl sm:text-3xl justify-around">

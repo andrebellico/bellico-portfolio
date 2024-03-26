@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
+import LocaleSwitcher from './LocaleSwitcher'
 
 // import SpotifyWebApi from 'spotify-web-api-js'
 
@@ -72,11 +73,10 @@ export default function Navbar({ children }: NavbarProps) {
         initial={{ top: -100 }}
         animate={{ top: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-pink-500  z-[999] fixed top-0 left-0 right-0 bg-transparent flex items-center p-3 justify-between mx-28"
+        className="text-pink-500  z-[999]  fixed top-0 left-0 right-0 bg-transparent flex items-center p-3 justify-around "
       >
-        <h1 className="font-semibold text-xl">Bellico</h1>
         <div className="gap-2 text-sm flex">
-          {/* {loggedIn && (
+          {/* {loggedIn &&; (
             <>
               <div>
                 <img src={nowPlaying.albumArt} width={40} height={40} />
@@ -91,23 +91,23 @@ export default function Navbar({ children }: NavbarProps) {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/andrebellico"
-            className="ml-8"
+            className=""
           >
-            <FaGithub size={20} />
+            <FaGithub className="sm:text-xl text-sm" />
           </Link>
           <Link
             target="_blank"
             rel="noreferrer"
             href={`https://wa.me/5511975981987?text=Olá, tudo bem?`}
           >
-            <FaWhatsapp size={20} />
+            <FaWhatsapp className="sm:text-xl text-sm" />
           </Link>
           <Link
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/andr%C3%A9-bellico/"
           >
-            <FaLinkedin size={20} />
+            <FaLinkedin className="sm:text-xl text-sm" />
           </Link>
           <Link
             target="_blank"
@@ -115,7 +115,7 @@ export default function Navbar({ children }: NavbarProps) {
             href="https://www.instagram.com/andrevsbellico/"
             className=""
           >
-            <FaInstagram size={20} />
+            <FaInstagram className="sm:text-xl text-sm" />
           </Link>
           {/* {loggedIn ? (
             <button className="text-white" onClick={() => getNowPlaying()}>
@@ -127,6 +127,8 @@ export default function Navbar({ children }: NavbarProps) {
             </a>
           )} */}
         </div>
+        <h1 className="font-semibold text-base sm:text-xl">Bellico</h1>
+        <LocaleSwitcher />
       </motion.div>
       {children}
     </header>
