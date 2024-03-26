@@ -1,0 +1,43 @@
+{
+    "HOME": {
+      "title": "I'm a developer and designer"
+    },
+    "ABOUTME": {
+        "subheading":"Hello, my name is",
+        "presentation":  "Hi, I'm André Bellico, a web developer with a passion for technology and four months' experience in the field. I have a strong desire to dedicate myself to creating innovative systems, combining attractive and intuitive interfaces in challenging projects. I'm constantly looking for new opportunities and challenges to expand my knowledge and skills.",
+        "contact-button": "Contact me"
+    },
+    "STACKANDUSES": {
+        "title" : "Stack And Uses"
+    },
+    "CLIENTS": {
+        "p1": "Some of the clients I've been",
+        "p2": " developing for"
+
+    },
+    "SELECTEDWORKS": {
+        "title" : "Featured projects",
+        "async-description" : "I developed the look of the company's landing page with a focus on attracting customers and increasing turnover, learning and improving marketing techniques.",
+        "async-button" : "See design",
+        "plana-title": "Architecture system",
+        "plana-description": "Plana AdHoc is a system that automates the process of choosing architectural customizations in an intuitive and interactive way!",
+        "plana-button": "See website",
+        "asyncUI-description": "Design system is a system for standardizing the elements, rules and principles that guide the development of a company's interfaces. Its aim is to create an identity for the user and facilitate the work of designers and developers.",
+        "asyncUI-subdescription": "Application",
+        "asyncUI-button": "See project"
+    },
+    "CONTACT": {
+        "title": "Talk to me",
+        "inputName" : "Name",
+        "placeholderName": "name",
+        "inputEmail" : "Email",
+        "placeholderEmail": "email",
+        "inputMessage" : "Your message!",
+        "placeholderMessage": "Type your message...",
+        "button": "Send"
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, br {🇧🇷 Português}en {🇺🇸 English} other {Outros}}"
+      }
+  }

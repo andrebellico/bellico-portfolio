@@ -1,10 +1,12 @@
 import StackIcon from 'tech-stack-icons'
+import { useTranslations } from 'use-intl'
 
 export default function StackAndUses() {
+  const t = useTranslations()
   return (
     <>
       <h1 className="text-3xl -mb-6 justify-center text-center w-full text-white">
-        Conhecimentos
+        {t('STACKANDUSES.title')}
       </h1>
       <div className="flex flex-row justify-center mx-28 my-20 ">
         <div className="flex flex-col justify-center items-center gap-2">

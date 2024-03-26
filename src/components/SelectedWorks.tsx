@@ -5,8 +5,10 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import Carousel from './Carousel'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'use-intl'
 
 export default function SelectedWorks() {
+  const t = useTranslations()
   const [isOpenAsync, setIsOpenAsync] = useState(false)
 
   function closeModalAsync() {
@@ -46,7 +48,7 @@ export default function SelectedWorks() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-3xl text-neutral-50 mb-4">
-            Projetos em destaque
+            {t('SELECTEDWORKS.title')}
           </h1>
           <div className="border border-pink-600/20 w-full"></div>
         </motion.div>
@@ -108,9 +110,7 @@ export default function SelectedWorks() {
           <div className="p-2 text-white gap-4">
             <h1 className="mb-4 text-pink-500">Landing Page</h1>
             <h1 className="sm:text-2xl text-base">
-              Desenvolvi o visual da landing page da empresa com o foco em
-              atrair clientes e aumentar o faturamento, aprendendo e aprimorando
-              técnicas de marketing.
+              {t('SELECTEDWORKS.async-description')}
             </h1>
 
             <div className="flex mt-2 gap-2">
@@ -118,7 +118,7 @@ export default function SelectedWorks() {
                 onClick={openModalAsync}
                 className=" flex font-thin text-sm items-center justify-center"
               >
-                Ver design
+                {t('SELECTEDWORKS.asyncUI-button')}
                 <IoIosArrowForward />
               </button>
             </div>
@@ -132,10 +132,11 @@ export default function SelectedWorks() {
           className="sm:flex flex-none text-white gap-8 my-24"
         >
           <div className="p-2 gap-4">
-            <h1 className="mb-4 text-pink-500">Sistema de arquitetura</h1>
+            <h1 className="mb-4 text-pink-500">
+              {t('SELECTEDWORKS.plana-title')}
+            </h1>
             <h1 className="sm:text-3xl  text-base">
-              O Plana AdHoc é um sistema que automatiza o processo de escolha de
-              customizações de arquitetura, de forma intuitiva e interativa!
+              {t('SELECTEDWORKS.asyncUI-description')}
             </h1>
             <h1 className="my-6">Website</h1>
             <div className="flex gap-2">
@@ -145,7 +146,7 @@ export default function SelectedWorks() {
                 href={'https://plana-adhoc.vercel.app/'}
                 className=" flex font-thin text-sm items-center justify-center"
               >
-                Ver site
+                {t('SELECTEDWORKS.plana-button')}
                 <IoIosArrowForward />
               </Link>
             </div>
@@ -216,12 +217,11 @@ export default function SelectedWorks() {
           <div className="p-2 text-white gap-4">
             <h1 className="mb-4 text-pink-500">AsyncUI</h1>
             <h1 className="sm:text-2xl text-base">
-              Design system é um sistema de padronização dos elementos, regras e
-              princípios que orientam o desenvolvimento das interfaces de uma
-              empresa. Seu objetivo é criar uma identidade para o usuário e
-              facilitar o trabalho dos designers e desenvolvedores.
+              {t('SELECTEDWORKS.asyncUI-description')}
             </h1>
-            <h1 className="my-6">Aplicação</h1>
+            <h1 className="my-6">
+              {t('SELECTEDWORKS.asyncUI-subdescription')}
+            </h1>
 
             <div className="flex gap-2">
               <Link
@@ -230,7 +230,7 @@ export default function SelectedWorks() {
                 href={'https://devcodapp.github.io/async-ui/'}
                 className=" flex font-thin text-sm items-center justify-center"
               >
-                Ver projeto
+                {t('SELECTEDWORKS.asyncUI-button')}
                 <IoIosArrowForward />
               </Link>
               <Link

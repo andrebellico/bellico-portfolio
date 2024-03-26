@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
     <div className="h-screen flex justify-center items-center w-full ">
       <Image width={400} height={400} src={'/not-found.png'} alt="not found" />
@@ -19,4 +19,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFound
