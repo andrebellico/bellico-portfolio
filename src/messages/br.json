@@ -1,0 +1,44 @@
+{
+    "HOME": {
+      "title": "Sou desenvolvedor e designer"
+    },
+    "ABOUTME": {
+        "subheading":"Olá, meu nome é",
+        "presentation": "Olá! Sou André Bellico, um desenvolvedor web apaixonado por tecnologia, com quatro meses de experiência na área. Tenho um forte desejo de dedicar-me à criação de sistemas inovadores, combinando interfaces atraentes e intuitivas em projetos desafiadores. Estou constantemente buscando novas oportunidades e desafios para expandir meu conhecimento e habilidades.",
+        "contact-button": "Entre em contato"
+
+    },
+    "STACKANDUSES": {
+        "title" : "Conhecimentos"
+    },
+    "CLIENTS": {
+        "p1": "Alguns dos clientes para os quais tenho",
+        "p2": "desenvolvido"
+
+    },
+    "SELECTEDWORKS": {
+        "title" :   "Projetos em destaque",
+        "async-description" : "Desenvolvi o visual da landing page da empresa com o foco em atrair clientes e aumentar o faturamento, aprendendo e aprimorando técnicas de marketing.",
+        "async-button" : "Ver design",
+        "plana-title": "Sistema de arquitetura",
+        "plana-description": "O Plana AdHoc é um sistema que automatiza o processo de escolha de customizações de arquitetura, de forma intuitiva e interativa!",
+        "plana-button": "Ver site",
+        "asyncUI-description": "Design system é um sistema de padronização dos elementos, regras e princípios que orientam o desenvolvimento das interfaces de uma empresa. Seu objetivo é criar uma identidade para o usuário e facilitar o trabalho dos designers e desenvolvedores.",
+        "asyncUI-subdescription": "Aplicação",
+        "asyncUI-button": "Ver projeto"
+    },
+    "CONTACT": {
+        "title": "Fale comigo",
+        "inputName" : "Nome",
+        "placeholderName": "nome",
+        "inputEmail" : "Email",
+        "placeholderEmail": "email",
+        "inputMessage" : "Mensagem!",
+        "placeholderMessage": "Digite sua mensagem...",
+        "button": "Enviar"
+    },
+    "LocaleSwitcher": {
+        "label": "Mudar idioma",
+        "locale": "{locale, select, br {🇧🇷 Português}en {🇺🇸 English} other {Outros}}"
+      }
+  }

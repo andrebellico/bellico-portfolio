@@ -20,6 +20,7 @@
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
+    "next-intl": "^3.10.0",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.0",
@@ -29,6 +30,7 @@
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
     "tech-stack-icons": "^2.0.3",
+    "use-intl": "^3.10.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {

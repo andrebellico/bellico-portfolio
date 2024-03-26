@@ -1,8 +1,10 @@
+import { useTranslations } from 'use-intl'
 import { HeaderText } from './HeaderText'
 import { motion } from 'framer-motion'
 
 export default function HomeHeader() {
-  const sentence = 'Sou desenvolvedor e designer'.split('')
+  const t = useTranslations()
+  const sentence = t('HOME.title').split('')
 
   return (
     <motion.div

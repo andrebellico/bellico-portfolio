@@ -1,10 +1,13 @@
 import Image from 'next/image'
+import { useTranslations } from 'use-intl'
 import { motion } from 'framer-motion'
 import { IoIosArrowRoundForward } from 'react-icons/io'
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 
 export default function AboutMe() {
+  const t = useTranslations()
+
   const handleContact = () => {
     const contactSection = document.querySelector('#ContactMe')
     if (contactSection) {
@@ -20,18 +23,13 @@ export default function AboutMe() {
         transition={{ duration: 0.5 }}
       >
         <p className="text-pink-600 md:text-base sm:text-sm lg:text-lg">
-          Olá, meu nome é
+          {t('ABOUTME.subheading')}
         </p>
         <h1 className="mb-4 md:text-4xl sm:3xl lg:text-5xl mt-2">
           André Bellico
         </h1>
         <p className="sm:mr-10 mr-0 pr-0 sm:pr-10 lg:text-base md:text-sm sm:text-xs">
-          Olá! Sou André Bellico, um desenvolvedor web apaixonado por
-          tecnologia, com quatro meses de experiência na área. Tenho um forte
-          desejo de dedicar-me à criação de sistemas inovadores, combinando
-          interfaces atraentes e intuitivas em projetos desafiadores. Estou
-          constantemente buscando novas oportunidades e desafios para expandir
-          meu conhecimento e habilidades.
+          {t('ABOUTME.presentation')}
         </p>
         <div className="gap-3  lg:grid-cols-6 grid-cols-2 grid text-[0.6rem] md:grid-cols-3 md:text-xs sm:text-xs lg:text-sm sm:grid-cols-2 mt-1">
           <div className="rounded bg-pink-800/30 flex hover:text-pink-400 justify-center text-pink-500 pt-1">
@@ -58,7 +56,7 @@ export default function AboutMe() {
             onClick={handleContact}
             className="items-center sm:text-base text-xs flex border mt-4 border-pink-600 text-pink-400 p-3 rounded-md"
           >
-            Entre em contato <IoIosArrowRoundForward />{' '}
+            {t('ABOUTME.contact-button')} <IoIosArrowRoundForward />{' '}
           </button>
           <div className="text-neutral-700 flex items-center gap-2 ml-2 mt-4">
             <Link

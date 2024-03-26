@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Josefin_Sans } from 'next/font/google'
 import { Toaster } from '@/components/ui/toaster'
 import { RenderContent } from '@/components/RenderContent'
+import { NextIntlClientProvider, useMessages } from 'next-intl'
 import './globals.css'
 export const metadata: Metadata = {
   title: '| Portfólio',
@@ -14,21 +15,29 @@ const josefin = Josefin_Sans({
   subsets: ['latin'],
 })
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode
-}) {
+  params: {
+    locale: 'en' | 'br'
+  }
+}
+
+const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
+  const messages = useMessages()
   return (
-    <html lang="en" className={josefin.className}>
+    <html lang={locale} className={josefin.className}>
       <head>
         <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
         <title>Bellico Portfolio</title>
       </head>
       <body>
-        <RenderContent>{children}</RenderContent>
-        <Toaster />
+        <NextIntlClientProvider messages={messages}>
+          <RenderContent>{children}</RenderContent>
+          <Toaster />
+        </NextIntlClientProvider>
       </body>
     </html>
   )
 }
+
+export default RootLayout
